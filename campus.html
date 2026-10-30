@@ -1,171 +1,190 @@
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-
+  <head>
     <title>CAMPUS LOST & FOUND</title>
-</head>
+  </head>
 
-
-<body>
-
+  <body>
     <header>
-        <h1>Campus Lost & Found</h1>
-        <p> Cette plateforme est dédiée pour les objets perdus sur le campus </p>
-         <!--<img src="identity.jpeg" alt="Profile Picture" width="200" height="200"> -->
-            
-        <nav>
-            <ul>
-                <li><a href="Annonces.html">Annonces</a></li>
-                <li><a href="Signaler un objet.html">Signaler un objet</a></li>
-                <li><a href="Récapitulatif.html">Récapitulatif</a></li>
-                <li><a href="Règles.html">Règles</a></li>
-            </ul>
-        </nav>
+      <h1>Campus Lost & Found</h1>
+      <p>Cette plateforme est dédiée pour les objets perdus sur le campus</p>
+      <!--<img src="identity.jpeg" alt="Profile Picture" width="200" height="200"> -->
+
+      <nav>
+        <ul>
+          <li><a href="Annonces.html">Annonces</a></li>
+          <li><a href="Signaler un objet.html">Signaler un objet</a></li>
+          <li><a href="Récapitulatif.html">Récapitulatif</a></li>
+          <li><a href="Règles.html">Règles</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <article class="article_Annonce_1">
-            <section class="Recently Reported Items">
-            <h2> Recently Reported Items. </h2>
-            <h3>Clé retrouvée.</h3>
-                <p> status : Trouvé 🟢</p>  
-                <p> Lieu : Bibliothèque</p>  
-                <p class="annonce-date">Publié le : <time datetime="2026-10-30"> 30 octobre 2026</time></p>
-            </section> </article>
+      <section class="Recently Reported Items">
+        <h2>Recently Reported Items.</h2>
+        <h3>Clé retrouvée.</h3>
+        <p>status : Trouvé 🟢</p>
+        <p>Lieu : Bibliothèque</p>
+        <p class="annonce-date">
+          Publié le : <time datetime="2026-10-30"> 30 octobre 2026</time>
+        </p>
+      </section>
 
-        <article class="article_Annonce_1">
-
-        <section class="Recently Reported Items">
-       
+      <section class="Recently Reported Items">
         <h3>Sac retrouvé.</h3>
-            <p> status : Trouvé 🟢</p>  
-            <p> Lieu : Classe</p>  
-            <p class="annonce-date">Publié le : <time datetime="2026-10-30"> 30 octobre 2026</time></p>
-        </section> </article>
+        <p>status : Trouvé 🟢</p>
+        <p>Lieu : Classe</p>
+        <p class="annonce-date">
+          Publié le : <time datetime="2026-10-30"> 30 octobre 2026</time>
+        </p>
+      </section>
 
+      <section class="Recently Reported Items">
+        <h3>Montre Perdue.</h3>
+        <p>status : Perdu 🔴</p>
+        <p>Lieu : Bibliothèque</p>
+        <p class="annonce-date">
+          Publié le : <time datetime="2026-10-30"> 30 octobre 2026</time>
+        </p>
+      </section>
 
-        <article class="article_Annonce_1">
-            <section class="Recently Reported Items">
-        
-            <h3>Montre Perdue.</h3>
-                    <p> status : Perdu 🔴</p>  
-                    <p> Lieu : Bibliothèque</p>  
-                    <p class="annonce-date">Publié le : <time datetime="2026-10-30"> 30 octobre 2026</time></p>
-            </section>
-        </article>
+      <section class="Recently Reported Items">
+        <h2>Signaler un Objet Perdu.</h2>
+        <form action="#" method="post">
+          <label for="name">Nom de l'object:</label>
+          <input type="text" id="name" name="name" required />
+          <br />
+          <label for="Date de signalement">Date de Signalement:</label>
+          <input
+            type="date"
+            id="Date de signalement"
+            name="Date de signalement"
+            required
+          />
+          <br />
+          <label for="Lieu de signalement">Lieu de Signalement:</label>
+          <input
+            type="text"
+            id="Lieu de signalement"
+            name="Lieu de signalement"
+            required
+          />
+          <br />
+          <label for="Description">Description:</label>
+          <input type="text" id="Description" name="Description" required />
+          <br />
+          <label for="mon-image">Insérere image :</label>
+          <input
+            type="file"
+            id="mon-image"
+            name="mon-image"
+            accept="image/*"
+            onchange="this.form.submit()"
+          />
+          <br />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <br />
+          <label for="statut">Statut de l'objet :</label>
+          <select id="statut" name="statut" required>
+            <option value="" disabled selected>Choisir un statut...</option>
+            <option value="perdu">Perdu 🔴</option>
+            <option value="trouve">Trouvé 🟢</option>
+          </select>
+          <br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <br />
 
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
 
-      
-         <article class="article_Annonce_1">
-        <section class="Recently Reported Items">
-        <h2> Signaler un Objet Perdu. </h2>
-        <!-- <h3>Clé retrouvée.</h3> -->
-            <form action="submit_form.php" method="post">
-                <label for="name">Nom de l'object:</label>
-                <input type="text" id="name" name="name" required>
-                <br>
-                <label for="Date de signalement">Date de Signalement:</label>
-                <input type="date" id="Date de signalement" name="Date de signalement" required>
-                <br>
-                <label for="Lieu de signalement">Lieu de Signalement:</label>
-                <input type="text" id="Lieu de signalement" name="Lieu de signalement" required>
-                <br>
-                <label for="Description">Description:</label>
-                <input type="text" id="Description" name="Description" required>
-                <br>
-                <label for="mon-image">Insérere image :</label>
-                <input type="file" id="mon-image" name="mon-image" accept="image/*" onchange="this.form.submit()">
-                <br>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <br>
-                <label for="statut">Statut de l'objet :</label>
-                    <select id="statut" name="statut" required>
-                        <option value="" disabled selected>Choisir un statut...</option>
-                        <option value="perdu">Perdu 🔴</option>
-                        <option value="trouve">Trouvé 🟢</option>
-                    </select>
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br>
-                
-                <p><button type="submit">Send Message</button></p>
-
-            </form>
-        
-        </article>
-    <section> 
+      <section>
         <h3>Récapitulatif des Objets Perdus et Retrouvés.</h3>
-        <p>Voici un récapitulatif des objets perdus et retrouvés sur le campus :</p>
+        <p>
+          Voici un récapitulatif des objets perdus et retrouvés sur le campus :
+        </p>
         <table border="1">
-            <thead>
-                <tr>
-                    <th>Nom de l'objet</th>
-                    <th>Date de signalement</th>
-                    <th>Lieu de signalement</th>
-                    <th>Description</th>
-                    <th>Statut</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Clé</td>
-                    <td>2026-10-30</td>
-                    <td>Bibliothèque</td>
-                    <td>Clé avec porte-clés rouge</td>
-                    <td>Trouvé 🟢</td>
-                </tr>
-                <tr>
-                    <td>Sac à dos</td>
-                    <td>2026-10-29</td>
-                    <td>Classe 101</td>
-                    <td>Sac noir avec logo d'université</td>
-                    <td>Trouvé 🟢</td>
-                </tr>
-                <tr>
-                    <td>Montre</td>
-                    <td>2026-10-28</td>
-                    <td>Cafétéria</td>
-                    <td>Montre en métal argenté, bracelet noir</td>
-                    <td>Perdu 🔴</td>
-                </tr>
+          <thead>
+            <tr>
+              <th>Nom de l'objet</th>
+              <th>Date de signalement</th>
+              <th>Lieu de signalement</th>
+              <th>Description</th>
+              <th>Statut</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Clé</td>
+              <td>2026-10-30</td>
+              <td>Bibliothèque</td>
+              <td>Clé avec porte-clés rouge</td>
+              <td>Trouvé 🟢</td>
+            </tr>
+            <tr>
+              <td>Sac à dos</td>
+              <td>2026-10-29</td>
+              <td>Classe 101</td>
+              <td>Sac noir avec logo d'université</td>
+              <td>Trouvé 🟢</td>
+            </tr>
+            <tr>
+              <td>Montre</td>
+              <td>2026-10-28</td>
+              <td>Cafétéria</td>
+              <td>Montre en métal argenté, bracelet noir</td>
+              <td>Perdu 🔴</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-            </tbody>
-
-    </section>
-
-    <section class="rules">
+      <section>
         <h2>Règles de la Plateforme</h2>
         <ul>
-            <li>Respectez les autres utilisateurs et leurs annonces.</li>
-            <li>Ne publiez pas d'annonces frauduleuses ou trompeuses.</li>
-            <li>Fournissez des informations précises et complètes sur les objets perdus ou trouvés.</li>
-            <li>Signalez tout comportement inapproprié à l'administration du campus.</li>
+          <li>Respectez les autres utilisateurs et leurs annonces.</li>
+          <li>Ne publiez pas d'annonces frauduleuses ou trompeuses.</li>
+          <li>
+            Fournissez des informations précises et complètes sur les objets
+            perdus ou trouvés.
+          </li>
+          <li>
+            Signalez tout comportement inapproprié à l'administration du campus.
+          </li>
         </ul>
+      </section>
 
-    </section>
+      <h2>Vidéo de Présentation de la Plateforme</h2>
+      <p>
+        Voici une vidéo de présentation de la plateforme Campus Lost & Found :
+      </p>
 
-    <article>
-        <h2>Vidéo de Présentation de la Plateforme</h2>
-        <p>Voici une vidéo de présentation de la plateforme Campus Lost & Found :</p>
-        <div class="video-container">
-            <video controls>
-                <source src="Campus Lost & Found.mp4" type="video/mp4">
-                Your browser does not support the video tag.    
-            </video>
-        </div>
-            <iframe src="https://www.youtube.com/watch?v=EBM2wxw_834" title="Lecteur vidéo YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
-        </div>
-    </article>
+      <video controls>
+        <source src="Campus Lost & Found.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
+      <iframe
+        src="https://www.youtube.com/watch?v=EBM2wxw_834"
+        title="Lecteur vidéo YouTube"
+        frameborder="0"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        "
+      ></iframe>
     </main>
-    
+
     <footer>
-        <p>&copy; 2026 Campus Lost & Found. All rights reserved.</p>
-    
-    
-   
+      <p>&copy; 2026 Campus Lost & Found. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
