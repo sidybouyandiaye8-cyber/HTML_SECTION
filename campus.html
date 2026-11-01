@@ -54,57 +54,48 @@
             
         </article>
       </section>
-         
+        
       <section class="Signalement d'objet">
+        <form action="/votre-page-de-traitement" method="POST" enctype="multipart/form-data"></form>
           <h2>Signaler un Objet Perdu.</h2>
-          <form action="#" method="post">
-              <label for="name">Nom de l'object:</label>
-              <input  type="text" id="name" name="name" required />
-              <br />
-              <label for="Date de signalement">Date de Signalement:</label>
-              <input
-                 type="date"
-                 id="Date de signalement"
-                 name="Date de signalement"
-                 required/>
-              <br/>
-              <label for="Lieu de signalement">Lieu de Signalement:</label>
-              <input
-                 type="text"
-                 id="Lieu de signalement"
-                 name="Lieu de signalement"
-                 required/>
-              <br />
-              <label for="Description">Description:</label>
-              <input type="text" id="Description" name="Description" required />
-              <br />
-              <label for="mon-image">Insérer image :</label>
-              <input
-                 type="file"
-                 id="mon-image"
-                 name="mon-image"
-                 accept="image/*"
-                 onchange="this.form.submit()"/>
-              <br />
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" required></textarea>
-              <br />
-              <label for="statut">Statut de l'objet :</label>
-                <select id="statut" name="statut" required>
-                  <option value="" disabled selected>Choisir un statut...</option>
-                  <option value="perdu">Perdu 🔴</option>
-                  <option value="trouve">Trouvé 🟢</option>
-                </select>
-              <br />
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-              <br />
+          <fieldset>
+              <legend>Type de déclaration</legend>
+              <label>
+                  <input type="radio" name="type_declaration" value="perdu"> Objet perdu 🔴
+              </label>
+              <label style="margin-left: 15px;">
+                  <input type="radio" name="type_declaration" value="trouve" checked> Objet trouvé 🟢
+              </label>
+          </fieldset>
 
-              <p>
-                <button type="submit">Send Message</button>
-              </p>
-          </form>
-      </section> 
+          <fieldset style="margin-top: 15px;">
+              <legend>Informations sur l'objet</legend>
+        
+              <div style="display: flex; flex-direction: row; align-items: center; gap: 15px; flex-wrap: wrap;">
+            
+                  <label for="nom">Nom de l'objet :</label>
+                  <input type="text" id="nom" name="nom_objet">
+
+                  <label for="description">Description :</label>
+                  <textarea id="description" name="description" rows="1" style="vertical-align: middle;"></textarea>
+
+                  <label for="date">Date :</label>
+                  <input type="date" id="date" name="date_objet">
+
+                  <label for="photo">Photo :</label>
+                  <input type="file" id="photo" name="photo_objet" accept="image/*">
+                  
+              </div>
+          </fieldset>
+
+              <div style="margin-top: 15px;">
+                  <button type="submit">Envoyer</button>
+              </div>
+        </form>  
+      </section>
+
+
+       
        
 
       <section>
