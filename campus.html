@@ -56,10 +56,10 @@
       </section>
         
       <section class="Signalement d'objet">
-        <form action="/votre-page-de-traitement" method="POST" enctype="multipart/form-data"></form>
+        <form action="/votre-page-de-traitement" method="POST" enctype="multipart/form-data" id="formulaire-objet"></form>
           <h2>Signaler un Objet Perdu.</h2>
           <fieldset>
-              <legend>Type de déclaration</legend>
+              <legend><strong>Type de déclaration</strong></legend>
               <label>
                   <input type="radio" name="type_declaration" value="perdu"> Objet perdu 🔴
               </label>
@@ -69,7 +69,7 @@
           </fieldset>
 
           <fieldset style="margin-top: 15px;">
-              <legend>Informations sur l'objet</legend>
+              <legend> <strong>Informations sur l'objet</strong></legend>
         
               <div style="display: flex; flex-direction: row; align-items: center; gap: 15px; flex-wrap: wrap;">
             
@@ -210,6 +210,17 @@
                       <span class="btn-icon">📩</span> 
                       Contacter l'équipe
                     </a> présent au bas de chaque annonce pour nous envoyer un e-mail directement avec la référence du message.
+                  </p>
+              </div>
+          </details>
+
+          <details class="faq-item">
+              <summary class="faq-question">Comment effectuer une déclaration ?</summary>
+              <div class="faq-reponse">
+                  <p>Vous pouvez renseigner ce formulaire
+                    <a href="#formulaire-objet" class="btn-lien-formulaire">⬇️ Aller au formulaire de déclaration</a>
+                      <form id="formulaire-objet" action="/traitement" method="POST">
+                      </form>
                   </p>
               </div>
           </details>
