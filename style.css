@@ -66,3 +66,72 @@ nav a:focus {
     outline-offset: 2px;                       /* Décolle légèrement l'anneau du lien */
     border-radius: 4px;                        /* Arrondit l'anneau de focus */
 }
+
+
+/*Style pour Etape 4*/
+
+.input:focus {
+    outline: 3px solid rgba(22, 97, 173, 0.5); /* Crée un anneau de focus bleu semi-transparent */
+    outline-offset: 2px;                       /* Décolle légèrement l'anneau du champ de saisie */
+    border-radius: 8px;                        /* Arrondit l'anneau de focus */
+
+}
+
+button:hover {
+    background-color: #4eeab8; /* Change la couleur de fond du bouton au survol */
+    color: #d74f15;            /* Change la couleur du texte du bouton au survol */
+    cursor: pointer;           /* Change le curseur pour indiquer que c'est cliquable */
+}
+
+
+/*Finale*/
+
+/* Style global du tableau */
+.modern-table {
+  /*border: 1px solid #221603; *//* Bordure fine autour du tableau */
+  width: 100%;
+  border-collapse: collapse; /* Fusionne les bordures */
+  margin: 25px 0;
+  font-size: 16px;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Légère ombre portée */
+}
+
+/* Style du titre du tableau */
+.modern-table caption {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style de l'en-tête (thead) */
+.modern-table thead tr {
+  background-color: #009879; /* Couleur de marque */
+  color: #ffffff;
+  text-align: left;
+}
+
+/* Espacement commun aux en-têtes et cellules */
+.modern-table th,
+.modern-table td {
+  padding: 12px 15px;
+}
+
+/* Bordure fine uniquement sous les lignes du corps (tbody) */
+.modern-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* Effet Zèbre : Lignes paires légèrement grisées */
+.modern-table tbody tr:nth-of-type(even) {
+  background-color: #eae9e0;
+}
+
+/* Effet au survol de la souris */
+.modern-table tbody tr:hover {
+  background-color: #af4c17;
+  cursor: pointer;
+}
+
+
