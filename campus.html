@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <title>CAMPUS LOST & FOUND</title>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <header>
-      <h1>Campus Lost & Found</h1>
+    <header class="header">
+      <h1 class="title" >Campus Lost & Found</h1>
       <p>Cette plateforme est dédiée pour les objets perdus sur le campus</p>
       <!--<img src="identity.jpeg" alt="Profile Picture" width="200" height="200"> -->
 
@@ -21,10 +22,10 @@
     </header>
 
     <main>
-      <section class="Recently Reported Items">
-        <article class="article_Annonce_1">
-            
-              <h2> Recently Reported Items. </h2>
+      <section class="Recently_Reported_Items">
+        <h2 class="title"> Recently Reported Items. </h2>
+        <article class="item_card">
+                      
               <h3>Clé retrouvée.</h3>
               <p> status : Trouvé 🟢</p>  
               <p> Lieu : Bibliothèque</p>  
@@ -32,7 +33,7 @@
              
         </article>
         
-        <article>
+        <article class="item_card">
             
               <h3>Sac retrouvé.</h3>
               <p>status : Trouvé 🟢</p>
@@ -43,7 +44,7 @@
            
         </article>
 
-        <article>
+        <article class="item_card">
             
               <h3>Montre Perdue.</h3>
               <p>status : Perdu 🔴</p>
@@ -57,7 +58,7 @@
         
       <section class="Signalement d'objet">
         <form action="/votre-page-de-traitement" method="POST" enctype="multipart/form-data" id="formulaire-objet"></form>
-          <h2>Signaler un Objet Perdu.</h2>
+          <h2 class="title">Signaler un Objet Perdu.</h2>
           <fieldset>
               <legend><strong>Type de déclaration</strong></legend>
               <label>
@@ -99,7 +100,7 @@
        
 
       <section>
-        <h3>Récapitulatif des Objets Perdus et Retrouvés.</h3>
+        <h3 class="title">Récapitulatif des Objets Perdus et Retrouvés.</h3>
         <p>
           Voici un récapitulatif des objets perdus et retrouvés sur le campus :
         </p>
@@ -140,7 +141,7 @@
       </section>
 
       <section>
-        <h2>Règles de la Plateforme</h2>
+        <h2 class="title">Règles de la Plateforme</h2>
         <ul>
           <li>Respectez les autres utilisateurs et leurs annonces.</li>
           <li>Ne publiez pas d'annonces frauduleuses ou trompeuses.</li>
@@ -154,7 +155,7 @@
         </ul>
       </section>
       <section>
-        <h2>Vidéo de Présentation de la Plateforme</h2>
+        <h2 class="title">Vidéo de Présentation de la Plateforme</h2>
         <p>
            Voici une vidéo de présentation de la plateforme Campus Lost & Found :
         </p>
@@ -183,7 +184,7 @@
 
       <!-- Section dédiée à la FAQ -->
       <section class="faq-section">
-          <h2 class="faq-principal-titre">Foire Aux Questions (FAQ)</h2>
+          <h2 class="faq-principal-titre" class="title">Foire Aux Questions (FAQ)</h2>
 
     
           <details class="faq-item">
@@ -218,9 +219,7 @@
               <summary class="faq-question">Comment effectuer une déclaration ?</summary>
               <div class="faq-reponse">
                   <p>Vous pouvez renseigner ce formulaire
-                    <a href="#formulaire-objet" class="btn-lien-formulaire">⬇️ Aller au formulaire de déclaration</a>
-                      <form id="formulaire-objet" action="/traitement" method="POST">
-                      </form>
+                      <a href="#formulaire-objet" class="btn-lien-formulaire">⬇️ Aller au formulaire de déclaration</a>
                   </p>
               </div>
           </details>

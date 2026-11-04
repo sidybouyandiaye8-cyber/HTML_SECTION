@@ -1,0 +1,62 @@
+
+/*Style pour Etape 1*/
+body {
+    background-color: #dbd5c1;              /* La zone Body est de couleur beige en font de page */
+}
+
+.title {                                       /* La classe title est utilisée pour changer le fond de page du Titre */
+    color: #0b0b0b;                         
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #cac2a8;              /*Font de page du titre est beige */
+    padding: 5px,8px;
+    text-align: center;                        /* Le texte du titre est centré */
+    border: 2px solid #553603;      
+    border-radius: 18px;
+    margin-top: 0;    
+    margin-bottom: 12px; 
+    
+}   
+
+.header {                                     /* La classe header est utilisée pour changer le fond de page du header */
+    background-color: #cac2a8;              /* Font de page du header est beige */
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #553603;
+    border-radius: 18px;
+}
+
+
+/*Style pour Etape 2*/
+.item_card {                                     /* La classe item_card est utilisée pour changer le fond de page des cartes d'objets */
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #553603;              /* La bordure des cartes d'objets est de couleur marron */
+    border-radius: 18px;
+    background-color: #f4f3f2;              /* Font de page des cartes d'objets est beige */
+}
+
+.Recently_Reported_Items {                                     /* La classe Recently Reported Items est utilisée pour changer le fond de page de la section */
+    background-color: #e8e3d2;              /* Font de page de la section est beige */
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #553603;              /* La bordure de la section est de couleur marron */
+    border-radius: 18px;
+      
+}
+
+/*Style pour Etape 3*/
+
+nav a:hover {
+    color: #4eeab8; 
+}
+
+nav a {
+    color: #784eea; 
+}
+
+nav a + a {
+    margin-left: 15px;              /* Ajoute un espacement horizontal uniforme entre les liens */
+    border-left: 1px solid #cbd5e1; /* Optionnel : ajoute une petite ligne de séparation verticale */
+    padding-left: 15px;
+}
