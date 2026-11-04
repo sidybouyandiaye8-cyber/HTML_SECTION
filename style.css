@@ -60,3 +60,9 @@ nav a + a {
     border-left: 1px solid #cbd5e1; /* Optionnel : ajoute une petite ligne de séparation verticale */
     padding-left: 15px;
 }
+
+nav a:focus {
+    outline: 3px solid rgba(173, 22, 27, 0.5); /* Crée un anneau de focus bleu semi-transparent */
+    outline-offset: 2px;                       /* Décolle légèrement l'anneau du lien */
+    border-radius: 4px;                        /* Arrondit l'anneau de focus */
+}
